@@ -58,7 +58,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier){
     Column(
-        verticalArrangement = Arrangement.SpaceAround,
+        verticalArrangement = Arrangement.SpaceEvenly,
 
         modifier = modifier,
 
@@ -67,15 +67,16 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier){
             text = message,
             fontSize = 90.sp,
             lineHeight = 107.sp,
-            textAlign = TextAlign.Start,
-            modifier = Modifier.background(color = Color.Green.copy(0.1F))
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .background(color = Color.Green.copy(0.1F))
         )
         Text(
             text = from,
             fontSize = 36.sp,
             modifier = Modifier
                 .padding(16.dp)
-                .align(alignment = Alignment.End)
+                .align(alignment = Alignment.CenterHorizontally)
                 .alpha(0.4F)
 
 
