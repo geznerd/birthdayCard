@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">birthdayCard</string>
+    <string name="selamat_pagi">Selamat Pagi</string>
+    <string name="pesan_from">Dari Azmi</string>
 </resources>
